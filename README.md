@@ -8,7 +8,7 @@ docker run --rm -v /path/onHost/:/path/onDockerImage/directory1 dockerParallelRe
 
 ### example
 ~~~~
-cd \~
+cd ~
 mkdir plsdelete
 mkdir plsdelete2
 echo asdf>>plsdelete/asdf.txt

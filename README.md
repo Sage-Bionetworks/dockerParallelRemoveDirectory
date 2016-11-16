@@ -1,5 +1,5 @@
 # dockerParallelRemoveDirectory
-deletes directory files in parallel for the DM challenge.
+deletes in parallel all files within specified directory for the DM challenge.
 
 parameterized version of Thomas Schaffter's parallel removal.
 

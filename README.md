@@ -5,7 +5,7 @@ parameterized version of Thomas Schaffter's parallel removal.
 
 ## Usage
 ~~~~
-docker run --rm -v /path/onHost/:/path/onDockerImage/directory1 ... -v /path/onHost/:/path/onDockerImage/directoryN dockerParallelRemoveDirectory directory1 directory2 ... directoryN
+docker run --rm -v /path/onHost/:/path/onDockerImage/directory1 [... -v /path/onHost/:/path/onDockerImage/directoryN] dockerParallelRemoveDirectory directory1 [... directoryN]
 ~~~~
 ### example
 ~~~~

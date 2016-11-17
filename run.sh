@@ -14,8 +14,18 @@ rmDirectoryContent() {
 		echo "Removing files from $1"
 		find $1/ -type f | parallel -m rm -fr {}
 		rm -fr $1/*
+
+		#check that it is empty
+		if [ "$(ls -A $1)" ]; then
+			echo "$arg is still not Empty"
+			exit 1
+		else
+			echo "$1 is Empty"
+		fi
+
 	else
-		echo "$1 is not a directory so nothing was done"
+		echo "$1 is not a directory"
+		exit 1
 	fi
 }
 
@@ -24,3 +34,4 @@ for arg in $@; do
 done
 
 echo "Done"
+exit 0
